@@ -1,0 +1,135 @@
+NMAP - NETWORK DISCOVERY AND SECURITY AUDITING
+
+Website: https://nmap.org/
+Documentation: https://nmap.org/book/man.html
+GitHub: https://github.com/nmap/nmap
+
+
+OVERVIEW
+
+Nmap (Network Mapper) is a free, open-source utility for network discovery and security auditing. It is designed to rapidly scan large networks, find active hosts, discover open ports, identify running services and their versions, and detect operating system details.
+
+It is widely used by system administrators, cybersecurity professionals, penetration testers, and security researchers for network inventory, managing service upgrade schedules, and monitoring host or service uptime.
+
+
+KEY FEATURES
+
+- Host Discovery: Identify active systems on a network.
+- Port Scanning: Discover open TCP and UDP ports.
+- Service and Version Detection: Determine service signatures and version details.
+- OS Detection: Estimate host operating systems and hardware characteristics.
+- Nmap Scripting Engine (NSE): Extend functionality using Lua scripts for vulnerability detection and advanced reconnaissance.
+- Flexible Output Formats: Save scan results in text, XML, or grepable formats.
+
+
+OBJECTIVES
+
+- Understand network topology and host availability.
+- Identify exposed ports and potentially vulnerable services.
+- Assist with network troubleshooting and security auditing.
+- Support authorized vulnerability assessments.
+- Build practical, hands-on skills in network reconnaissance.
+
+
+INSTALLATION
+
+Kali Linux
+Nmap comes pre-installed on Kali Linux. Check your version:
+
+nmap --version
+
+If it is missing or needs an update:
+
+sudo apt update && sudo apt install nmap -y
+
+Ubuntu Linux
+
+sudo apt update
+sudo apt install nmap -y
+
+Verify installation:
+
+nmap --version
+
+
+BASIC USAGE
+
+Note: Replace TARGET_IP with the target IP address or domain name you are explicitly authorized to scan.
+
+1. Basic Target Scan (scans the 1000 most common TCP ports)
+nmap TARGET_IP
+
+2. Scan Specific Ports (ports 22, 80, and 443)
+nmap -p 22,80,443 TARGET_IP
+
+3. Scan All TCP Ports (all 65535 ports)
+nmap -p- TARGET_IP
+
+4. Service Version Detection
+nmap -sV TARGET_IP
+
+5. Operating System Detection (requires root or sudo)
+sudo nmap -O TARGET_IP
+
+6. TCP SYN Stealth Scan
+sudo nmap -sS TARGET_IP
+
+7. Local Subnet Host Discovery (ping sweep, no port scan)
+nmap -sn 192.168.1.0/24
+
+8. Scan Selected UDP Ports (DNS, NTP, SNMP)
+sudo nmap -sU -p 53,123,161 TARGET_IP
+
+9. Save Output
+Normal text:
+nmap -oN scan_results.txt TARGET_IP
+
+XML output:
+nmap -oX scan_results.xml TARGET_IP
+
+All major formats (text, XML, grepable):
+nmap -oA scan_results TARGET_IP
+
+
+VIDEO TUTORIAL
+
+An educational video demonstrating Nmap for host discovery, port scanning, and service detection.
+
+Creator: Rajveer Kushwaha
+Creator GitHub: https://github.com/rajveerkushwaha
+Video Link: https://drive.google.com/file/d/1F28bx5-bGfiumD-7mptuGj52y2i8m5ev/view?usp=drive_link
+
+
+OFFICIAL RESOURCES
+
+- Official Website: https://nmap.org/
+- Nmap Reference Guide: https://nmap.org/book/man.html
+- Nmap Book: https://nmap.org/book/
+- Nmap Scripting Engine (NSE): https://nmap.org/book/nse.html
+- Downloads: https://nmap.org/download.html
+- GitHub Repository: https://github.com/nmap/nmap
+
+
+DISCLAIMER - AUTHORIZED USE ONLY
+
+This documentation and the accompanying video tutorial are created strictly for educational purposes, legal network administration, and authorized penetration testing.
+
+- Always obtain prior written authorization before scanning target networks or hosts.
+- Unlawful scanning may violate local, national, or international computer crime laws.
+- Avoid disruptive or high-frequency scans against active production systems without approval.
+
+The author assumes no liability for misuse or damage caused by improper use of these tools.
+
+
+CONTRIBUTIONS
+
+Suggestions and improvements to this documentation are welcome. For contributions to the Nmap core application or scripts, refer to the official Nmap repository: https://github.com/nmap/nmap
+
+
+LICENSE
+
+Nmap is distributed under custom open-source licensing terms. Refer to the official Nmap Legal Guide for full details: https://nmap.org/book/man-legal.html
+
+
+Documentation and Video Tutorial Created By: Rajveer Kushwaha
+https://github.com/rajveerkushwaha
