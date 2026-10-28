@@ -1,0 +1,119 @@
+# Flowsint — Graph-Based OSINT Investigation Platform
+
+Website: https://www.flowsint.io/
+Documentation: https://www.flowsint.io/docs/overview
+Official Repository: https://github.com/reconurge/flowsint
+
+## Overview
+
+Flowsint is a modular Open Source Intelligence (OSINT) investigation and reconnaissance platform designed to collect, enrich, correlate, and visualize publicly available information.
+
+It provides graph-based visualization for exploring relationships between entities and supports multiple intelligence sources through extensible enrichers and automated investigation workflows. Flowsint focuses on modularity, local execution, privacy, and extensibility.
+
+## Key Features
+
+- Graph-based visualization of entity relationships.
+- Automated enrichment through supported OSINT enrichers.
+- Investigation flows that connect multiple enrichment steps.
+- Modular architecture for custom tools and enrichers.
+- Local data storage for greater control over investigation data.
+- Vault for managing sensitive configuration values and credentials.
+- Extensible workflows that can adapt as sources and tools change.
+
+## Objectives
+
+- Centralize OSINT information from multiple sources.
+- Discover and analyze relationships between entities.
+- Reduce repetitive manual investigation tasks.
+- Automate supported reconnaissance and enrichment workflows.
+- Support cybersecurity research and threat intelligence.
+- Provide a flexible foundation for custom OSINT integrations.
+
+## Installation
+
+### Prerequisites
+
+Install the dependencies required by the current official project documentation. Common tools may include Git, Docker, Docker Compose, and Make.
+
+### Ubuntu / Kali Linux
+
+Clone the official repository:
+
+    git clone https://github.com/reconurge/flowsint.git
+    cd flowsint
+
+Use the startup command specified by the current official installation guide. The project documentation has referenced:
+
+    make prod
+
+Open the local address shown in the application output or installation documentation. Confirm the required dependencies, configuration, command, and port for the version you install.
+
+Installation guide: https://www.flowsint.io/docs/getting-started/quickstart
+
+## Basic Usage
+
+1. Start Flowsint and open its web interface.
+2. Create or access an investigation.
+3. Add a supported entity, such as a domain.
+4. Select an appropriate enricher.
+5. Review the returned information and discovered relationships.
+6. Expand the graph to investigate related entities.
+7. Combine supported enrichment steps into automated flows when appropriate.
+
+Available enrichment capabilities depend on the installed version and configured integrations.
+
+## Video Tutorial
+
+This video tutorial was created by Rajveer Kushwaha to demonstrate the usage of Flowsint for OSINT investigations.
+
+Created by: Rajveer Kushwaha
+GitHub Profile: https://github.com/rajveerkushwaha
+Watch the Video Tutorial:
+https://drive.google.com/file/d/1E97vFj_epUF3ysqPkOjYXVAJr5FQNzya/view?usp=drive_link
+
+Official website demo: https://www.flowsint.io/#demo
+
+## Official Documentation and Resources
+
+- Official Website: https://www.flowsint.io/
+- Documentation Overview: https://www.flowsint.io/docs/overview
+- Installation Guide: https://www.flowsint.io/docs/getting-started/quickstart
+- Enrichers: https://www.flowsint.io/docs/getting-started/enrichers
+- Investigation Flows: https://www.flowsint.io/docs/getting-started/flows
+- Vault: https://www.flowsint.io/docs/getting-started/vault
+- Available Enrichers: https://www.flowsint.io/docs/sources/available-enrichers
+- Developer Documentation: https://www.flowsint.io/docs/developers/getting-started
+- Official Repository: https://github.com/reconurge/flowsint
+- Issues and Bug Reports: https://github.com/reconurge/flowsint/issues
+
+## Disclaimer
+
+This documentation and video tutorial are intended for educational purposes, authorized cybersecurity research, and legitimate OSINT investigations.
+
+- Obtain appropriate authorization before conducting security testing or reconnaissance.
+- Comply with applicable laws, regulations, and third-party service terms.
+- Respect privacy and avoid unauthorized surveillance, doxxing, or misuse of collected information.
+- Use API keys and third-party integrations responsibly.
+- Avoid excessive requests that may trigger rate limits, account restrictions, or infrastructure alerts.
+- Protect investigation data and credentials.
+- Review the security configuration before exposing the application to a network.
+
+Users are responsible for their use of the software and the consequences of their activities. Refer to the official project repository for its license and terms.
+
+## Contributions
+
+For contributions to the official Flowsint project:
+1. Review the repository documentation and contribution guidelines.
+2. Open an issue to report bugs or suggest improvements.
+3. Submit a pull request with a clear description of the changes.
+
+Repository: https://github.com/reconurge/flowsint
+
+## License
+
+Refer to the official repository for the applicable license and terms of use:
+https://github.com/reconurge/flowsint
+
+---
+Documentation / Video Tutorial Creator: Rajveer Kushwaha
+GitHub Profile: https://github.com/rajveerkushwaha
